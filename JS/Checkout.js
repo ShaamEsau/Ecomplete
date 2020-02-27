@@ -55,7 +55,7 @@ function Purchase() {
         localStorage.setItem("Shipping", 0);
 
 
-        alert("Total is $" + totPrice + ". Your purchase has been successfully made! Enjoy the game(s)!!!!!!!!!!! Your Reference Number is : " + refNum);
+        alert("Total is $" + totPrice + ". Your purchase has been successfully made! Your Reference Number is : " + refNum);
 
     } else {
 
