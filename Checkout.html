@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Checkout</title>
+	<!-- Calls custom CSS file to manipulate the web page -->
+	<link rel="stylesheet" type="text/css" href="CSS/CheckoutStyle.css">
+</head>
+<body>
+	<!-- Creates a div box to act as a container for elements -->
+	<div>
+		<!-- Retrieves image to be used on web page -->
+		<img id="logo" src="Images/logo.jpg">
+	</div>
+	<div id="Shipping">
+		<!-- Creates a structured container for data entries  -->
+		<form>
+			<!-- Converts text to heading format 2 -->
+			<h2>Shipping Address</h2>
+			<!-- Creates a line across the page -->
+			<hr>
+			
+			<p>Email Address</p>
+			<!-- An input field that allow for users to enter data  -->
+			<input id="email" type="text">
+			<br/>
+			<hr id="secondaryLine">
+
+			<p>First Name</p>
+			<input id="fName" type="text">
+			<br/>
+
+			<p>Last Name</p>
+			<input id="lName" type="text">
+			<br/>
+
+			<p>Company</p>
+			<input id="company" type="text">
+			<br/>
+
+			<p>Street Address</p>
+			<input id="strAdd1" type="text">
+			<br/>
+			<input id="strAdd2" type="text">
+			<br/>
+
+			<p>City</p>
+			<input id="city" type="text">
+			<br/>
+
+			<p>State/Province</p>
+			<select id="stateOrProv">
+				<option>Cape Town</option>
+				<option>Durban</option>
+				<option>Joburg</option>
+			</select>
+			<br/>
+
+			<p>Zip/Postal Code</p>
+			<input id="zipOrPost" type="text">
+			<br/>
+			<!-- Creates a button that executes a function with a parameter value when clicked on  -->
+			<button onclick="shipSav()">Submit</button>
+		</form>
+	</div>
+
+	<div id="Order">
+		<h3>Order Summary</h3>
+		<hr>
+		
+		<div>
+			<p>Cart Subtotal</p>
+			<p id="subtotal"></p>
+		</div>
+		<div>
+			<p>Shipping</p>
+			<p id="shipCost"></p>
+		</div>
+		<hr>
+		<div>
+			<h4>Order Total</h4>
+			<h4 id="orderTot"></h4>
+		</div>
+		<button onclick="Purchase()">Purchase</button>
+	</div>
+
+	<!-- Calls custom JavaScript file to manipulate page -->
+	<script type="text/javascript" src="JS/Checkout.js"></script>
+</body>
+</html>

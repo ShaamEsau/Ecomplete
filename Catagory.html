@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Category</title>
+    <!-- Calls custom CSS file to manipulate the web page -->
+    <link rel="stylesheet" type="text/css" href="CSS/IndexStyle.css">
+    <!-- Calls jQuery libraries to be used -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Creates a div box to act as a container for elements -->
+    <div id="header">
+        <!-- Retrieves image to be used on web page -->
+        <img id="logo" src="Images/logo.jpg">
+        <!-- Uses an image to act as a button to redirect to a specified page  -->
+        <a href="Checkout.html"><img id="cart" src="Images/cart.png"></a>
+    </div>
+    <!-- Creates a line space -->
+    <br />
+    <!-- Creates nav bar container -->
+    <nav id="navBar">
+        <div>
+            <!-- Creates an unordered list  -->
+            <ul>
+                <!-- Creates a list item -->
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="filterClothes">
+        <label>Jackets</label>
+        <!-- Creates a radio button to filter through items -->
+        <input type="radio" name="filter" id="jacketFilter">
+        <label>T Shirts</label>
+        <input type="radio" name="filter" id="teeFilter">
+    </div>
+    <!-- Jacket products -->
+    <div id="jacketBox">
+        <!-- Converts text to heading format 3 -->
+        <h3>Jackets</h3>
+        <div>
+            <div id="itemAd">
+                <img id="prodItem" src="Images/FunnelJacket.jpg">
+                <br />
+                <a href="FunnelJacket.html">Funnel Jacket</a>
+                <p>$39.00</p>
+                <div class="colorSel">
+                    <!-- A label to hold radio button and customise its look -->
+                    <label id="colFirstChoice"><input id="colWhite" type="radio" value="white" name="color"></label>
+                    <label id="colSecondChoice"><input id="colGrey" type="radio" value="grey" name="color"></label>
+                    <label id="colThirdChoice"><input id="colBlack" type="radio" value="black" name="color"></label>
+                </div>
+                <br />
+                <div id="sizeSel">
+                    <label id="sizeFirstChoice"><input id="small" type="radio" value="S" name="size">S</label>
+                    <label id="sizeSecondChoice"><input id="medium" type="radio" value="M" name="size">M</label>
+                    <label id="sizeThirdChoice"><input id="large" type="radio" value="L" name="size">L</label>
+                </div>
+                <br />
+                <br />
+                <!-- Creates a button that executes a function with a parameter value when clicked on  -->
+                <button onclick="addToCart('FunnelJacket')">Add to Cart</button>
+            </div>
+            <div id="itemAd">
+                <img id="prodItem" src="Images/WorkJacket.jpg">
+                <br />
+                <a href="WorkoutJacket.html">Workout Jacket</a>
+                <p>$19.00</p>
+                <div id="colorSel">
+                    <label id="colFirstChoice"><input id="colWhite" type="radio" value="white" name="color"></label>
+                    <label id="colSecondChoice"><input id="colGrey" type="radio" value="grey" name="color"></label>
+                    <label id="colThirdChoice"><input id="colBlack" type="radio" value="black" name="color"></label>
+                </div>
+                <br />
+                <br />
+                <div id="sizeSel">
+                    <label id="sizeFirstChoice"><input id="small" type="radio" value="S" name="size">S</label>
+                    <label id="sizeSecondChoice"><input id="medium" type="radio" value="M" name="size">M</label>
+                    <label id="sizeThirdChoice"><input id="large" type="radio" value="L" name="size">L</label>
+                </div>
+                <br />
+                <br />
+                <button onclick="addToCart('WorkoutJacket')">Add to Cart</button>
+            </div>
+            <div id="itemAd">
+                <img id="prodItem" src="Images/MeshJacket.webp">
+                <br />
+                <a href="MeshJacket.html">Mesh Jacket</a>
+                <p>$50.00</p>
+                <div id="colorSel">
+                    <label id="colFirstChoice"><input id="colWhite" type="radio" value="white" name="color"></label>
+                    <label id="colSecondChoice"><input id="colGrey" type="radio" value="grey" name="color"></label>
+                    <label id="colThirdChoice"><input id="colBlack" type="radio" value="black" name="color"></label>
+                </div>
+                <br />
+                <br />
+                <div id="sizeSel">
+                    <label id="sizeFirstChoice"><input id="small" type="radio" value="S" name="size">S</label>
+                    <label id="sizeSecondChoice"><input id="medium" type="radio" value="M" name="size">M</label>
+                    <label id="sizeThirdChoice"><input id="large" type="radio" value="L" name="size">L</label>
+                </div>
+                <br />
+                <br />
+                <button onclick="addToCart('MeshJacket')">Add to Cart</button>
+            </div>
+            <div id="itemAd">
+                <img id="prodItem" src="Images/ZipJacket.jpg">
+                <br />
+                <a href="ZipJacket.html">Zip Up Jacket</a>
+                <p>$50.00</p>
+                <div id="colorSel">
+                    <label id="colFirstChoice"><input id="colWhite" type="radio" value="white" name="color"></label>
+                    <label id="colSecondChoice"><input id="colGrey" type="radio" value="grey" name="color"></label>
+                    <label id="colThirdChoice"><input id="colBlack" type="radio" value="black" name="color"></label>
+                </div>
+                <br />
+                <br />
+                <div id="sizeSel">
+                    <label id="sizeFirstChoice"><input id="small" type="radio" value="S" name="size">S</label>
+                    <label id="sizeSecondChoice"><input id="medium" type="radio" value="M" name="size">M</label>
+                    <label id="sizeThirdChoice"><input id="large" type="radio" value="L" name="size">L</label>
+                </div>
+                <br />
+                <br />
+                <button onclick="addToCart('ZipJacket')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Tee Products -->
+    <div id="teeBox">
+        <h3>T Shirts</h3>
+        <div>
+            <div id="itemAd">
+                <img id="prodItem" src="Images/ShortSleeve.jpg">
+                <br />
+                <a href="ShortSleeve.html">Print Tee</a>
+                <p>$10.00</p>
+                <div id="colorSel">
+                    <label id="colFirstChoice"><input id="colWhite" type="radio" value="white" name="color"></label>
+                    <label id="colSecondChoice"><input id="colGrey" type="radio" value="grey" name="color"></label>
+                    <label id="colThirdChoice"><input id="colBlack" type="radio" value="black" name="color"></label>
+                </div>
+                <br />
+                <br />
+                <div id="sizeSel">
+                    <label id="sizeFirstChoice"><input id="small" type="radio" value="S" name="size">S</label>
+                    <label id="sizeSecondChoice"><input id="medium" type="radio" value="M" name="size">M</label>
+                    <label id="sizeThirdChoice"><input id="large" type="radio" value="L" name="size">L</label>
+                </div>
+                <br />
+                <br />
+                <button onclick="addToCart('ShortSleeve')">Add to Cart</button>
+            </div>
+            <div id="itemAd">
+                <img id="prodItem" src="Images/YogaSleeveless.jpg">
+                <br />
+                <a href="YogaSleeveless.html">Sleeveless Yoga Tee</a>
+                <p>$15.00</p>
+                <div id="colorSel">
+                    <label id="colFirstChoice"><input id="colWhite" type="radio" value="white" name="color"></label>
+                    <label id="colSecondChoice"><input id="colGrey" type="radio" value="grey" name="color"></label>
+                    <label id="colThirdChoice"><input id="colBlack" type="radio" value="black" name="color"></label>
+                </div>
+                <br />
+                <br />
+                <div id="sizeSel">
+                    <label id="sizeFirstChoice"><input id="small" type="radio" value="S" name="size">S</label>
+                    <label id="sizeSecondChoice"><input id="medium" type="radio" value="M" name="size">M</label>
+                    <label id="sizeThirdChoice"><input id="large" type="radio" value="L" name="size">L</label>
+                </div>
+                <br />
+                <br />
+                <button onclick="addToCart('YogaSleeveless')">Add to Cart</button>
+            </div>
+            <div id="itemAd">
+                <img id="prodItem" src="Images/YogaFit.jpg">
+                <br />
+                <a href="YogaFit.html">Fit Yoga Tee</a>
+                <p>$10.00</p>
+                <div id="colorSel">
+                    <label id="colFirstChoice"><input id="colWhite" type="radio" value="white" name="color"></label>
+                    <label id="colSecondChoice"><input id="colGrey" type="radio" value="grey" name="color"></label>
+                    <label id="colThirdChoice"><input id="colBlack" type="radio" value="black" name="color"></label>
+                </div>
+                <br />
+                <br />
+                <div id="sizeSel">
+                    <label id="sizeFirstChoice"><input id="small" type="radio" value="S" name="size">S</label>
+                    <label id="sizeSecondChoice"><input id="medium" type="radio" value="M" name="size">M</label>
+                    <label id="sizeThirdChoice"><input id="large" type="radio" value="L" name="size">L</label>
+                </div>
+                <br />
+                <br />
+                <button onclick="addToCart('YogaFit')">Add to Cart</button>
+            </div>
+            <div id="itemAd">
+                <img id="prodItem" src="Images/PlainT.jpg">
+                <br />
+                <a href="PlainT.html">Plain Tee</a>
+                <p>$5.00</p>
+                <div id="colorSel">
+                    <label id="colFirstChoice"><input id="colWhite" type="radio" value="white" name="color"></label>
+                    <label id="colSecondChoice"><input id="colGrey" type="radio" value="grey" name="color"></label>
+                    <label id="colThirdChoice"><input id="colBlack" type="radio" value="black" name="color"></label>
+                </div>
+                <br />
+                <br />
+                <div id="sizeSel">
+                    <label id="sizeFirstChoice"><input id="small" type="radio" value="S" name="size">S</label>
+                    <label id="sizeSecondChoice"><input id="medium" type="radio" value="M" name="size">M</label>
+                    <label id="sizeThirdChoice"><input id="large" type="radio" value="L" name="size">L</label>
+                </div>
+                <br />
+                <br />
+                <button onclick="addToCart('PlainTee')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Calls custom JavaScript file to manipulate page -->
+    <script type="text/javascript" src="JS/Category.js"></script>
+</body>
+
+</html>

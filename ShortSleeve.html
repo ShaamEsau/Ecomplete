@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Print Sleeve</title>
+    <!-- Calls custom CSS file to manipulate the web page -->
+    <link rel="stylesheet" type="text/css" href="CSS/ProductStyle.css">
+</head>
+
+<body>
+    <!-- Creates a div box to act as a container for elements -->
+    <div id="header">
+        <!-- Retrieves image to be used on web page -->
+        <img id="logo" src="Images/logo.jpg">
+        <!-- Uses an image to act as a button to redirect to a specified page  -->
+        <a href="Checkout.html"><img id="cart" src="Images/cart.png"></a>
+    </div>
+    <!-- Creates a line space -->
+    <br />
+    <!-- Creates nav bar container -->
+    <nav id="navBar">
+        <div>
+            <!-- Creates an unordered list  -->
+            <ul>
+                <!-- Creates a list item -->
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Catagory.html">Products</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <img id="prodImg" src="Images/ShortSleeve.jpg">
+    <div id="prodDetails">
+        <!-- Convert text to heading format 1 -->
+        <h1>Print Sleeve</h1>
+        <div>
+            <p id="price">$10.00</p>
+            <p id="stock">IN STOCK</p>
+        </div>
+        <!-- Creates a line across the page  -->
+        <hr>
+        <div>
+            <label>Color</label><br />
+            <div id="colSel">
+                <!-- A label to hold radio button and customise its look -->
+                <label id="colFirstChoice"><input id="colWhite" type="radio" value="white" name="color"></label>
+                <label id="colSecondChoice"><input id="colGrey" type="radio" value="grey" name="color"></label>
+                <label id="colThirdChoice"><input id="colBlack" type="radio" value="black" name="color"></label>
+            </div>
+            <br />
+            <label>Size</label><br />
+            <div id="sizeSel">
+                <label id="sizeFirstChoice"><input id="small" type="radio" value="S" name="size">S</label>
+                <label id="sizeSecondChoice"><input id="medium" type="radio" value="M" name="size">M</label>
+                <label id="sizeThirdChoice"><input id="large" type="radio" value="L" name="size">L</label>
+            </div>
+            <br />
+            <label>Qty</label><br />
+            <input id="quantity" type="text" size="1">
+            <br />
+            <!-- Creates a button that executes a function with a parameter value when clicked on  -->
+            <button onclick="addToCart('ShortSleeve')">Add to Cart</button>
+        </div>
+    </div>
+    <!-- Calls custom JavaScript file to manipulate page -->
+    <script type="text/javascript" src="JS/Product.js"></script>
+</body>
+
+</html>

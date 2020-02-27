@@ -1,0 +1,124 @@
+body{
+	text-align: center;
+}
+#header{
+	display: inline-block;
+}
+
+#logo{
+	width: 100px;
+	height: 100px;
+	padding-right: 1100px;
+	float: left;
+}
+
+#cart{
+	width: 75px;
+	height: 75px;
+	float: right
+}
+
+li{
+	list-style-type: none;
+}
+
+#navBar{
+	background: lightgrey;
+}
+
+#Banner{
+	margin-left: 150px;
+	margin-right: 150px;
+	display: block;
+}
+
+#topAd{
+	height: 200px;
+	width: 100%;
+}
+
+#leftAd{
+	float: left;
+	height: 600px;
+	width: 350px;
+}
+
+#artAd{
+	float: right;
+	height: 200px;
+	width: 65.4%;
+}
+
+#midAd{
+	width: 320px;
+	height: 400px;
+}
+
+#botRightAd{
+	float: right;
+	height: 600px;
+	width: 350px;
+}
+
+#botAd{
+	float: left;
+	width: 680px;
+	height: 190px;
+}
+
+#productBox{
+	padding-top: 300px;
+}
+
+#itemAd{
+	display: inline-block;
+	padding: 50px;
+}
+
+#prodItem{
+	width: 200px;
+	height: 200px;
+}
+
+#filterClothes{
+	float: left
+}
+
+#colorSel{
+	display: inline-block;
+}
+
+#colFirstChoice{
+	background: white;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+#colSecondChoice{
+	background: grey;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+#colThirdChoice{
+	background: black;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+#sizeSel{
+	display: inline-block;
+}
+
+#sizeFirstChoice, #sizeSecondChoice, #sizeThirdChoice{
+	background: lightgrey;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+button{
+	border: none;
+	background: blue;
+	color: white;
+	padding: 10px 20px 10px 20px 
+}

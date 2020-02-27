@@ -1,0 +1,83 @@
+#header{
+	display: inline-block;
+}
+
+#logo{
+	width: 100px;
+	height: 100px;
+	padding-right: 1100px;
+	float: left;
+}
+
+#cart{
+	width: 75px;
+	height: 75px;
+	float: right
+}
+
+li{
+	list-style-type: none;
+}
+
+#navBar{
+	background: lightgrey;
+}
+
+#prodImg{
+	width: 600px;
+	height: 700px;
+	float: left;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#prodDetails{
+
+}
+
+#price, #stock{
+	display: inline-block;
+}
+
+#stock{
+	float: right
+}
+
+#colorSel{
+	display: inline;
+}
+
+#colFirstChoice{
+	background: white;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+#colSecondChoice{
+	background: grey;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+#colThirdChoice{
+	background: black;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+#sizeSel{
+	display: inline;
+}
+
+#sizeFirstChoice, #sizeSecondChoice, #sizeThirdChoice{
+	background: lightgrey;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+button{
+	border: none;
+	background: blue;
+	color: white;
+	padding: 10px 20px 10px 20px 
+}

@@ -1,0 +1,27 @@
+#logo{
+	width: 300px;
+	height: 100px;
+}
+
+#Shipping{
+	float: left;
+	width: 600px;
+}
+
+#secondaryLine{
+	margin-right: 300px;
+}
+
+#Order{
+	float: right;
+	background: lightgrey;
+	width: 500px;
+	margin-top: 65px;
+}
+
+button{
+	border: none;
+	background: blue;
+	color: white;
+	padding: 10px 20px 10px 20px 
+}
